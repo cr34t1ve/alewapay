@@ -37,6 +37,7 @@ class _IntroScreen1State extends State<IntroScreen1> {
             ),
             TextField(
               controller: _phoneController,
+              keyboardType: TextInputType.number,
               onChanged: (val) {
                 setState(() {
                   val.length == 10 ? isTen = true : false;
