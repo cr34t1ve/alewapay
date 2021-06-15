@@ -2,13 +2,21 @@ import 'package:alewa_pay/components/button.dart';
 import 'package:flutter/material.dart';
 
 class IntroScreen4 extends StatefulWidget {
-
   @override
   _IntroScreen4State createState() => _IntroScreen4State();
 }
 
 class _IntroScreen4State extends State<IntroScreen4> {
   TextEditingController _emailController = TextEditingController();
+  String tag = 'alewapay';
+
+  // @override
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+  //   _emailController.text = 'yourtag';
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,11 +46,10 @@ class _IntroScreen4State extends State<IntroScreen4> {
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
               style: TextStyle(
-                fontFamily: 'Manrope',
-                fontSize: 25.0,
-                fontWeight: FontWeight.w400,
-                color: Color(0xFF555E6C)
-              ),
+                  fontFamily: 'Manrope',
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.w400,
+                  color: Color(0xFF555E6C)),
               decoration: InputDecoration(
                   hintText: 'Email',
                   border: InputBorder.none,
