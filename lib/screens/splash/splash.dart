@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class Splash extends StatelessWidget {
 
@@ -9,10 +8,16 @@ class Splash extends StatelessWidget {
       backgroundColor: Color(0xFF434190),
       body: Center(
         //correct
-        child: Divider()
-        // SvgPicture.asset(
-        //   'assets/images/AlewaPayAlewaPay.svg'
-        // ),
+        child: Text(
+          'AlewaPay',
+          style: TextStyle(
+            fontFamily: 'Poppins',
+            fontWeight: FontWeight.w700,
+            fontSize: 24.0,
+            color: Colors.white,
+            height: 3.6
+          ),
+        )
       ),
     );
   }
