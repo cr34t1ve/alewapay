@@ -1,14 +1,5 @@
-var months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December'
+var networks = [
+  'assets/images/Rectangle 48mtn.png',
+  'assets/images/Rectangle 49airteltigo.png',
+  'assets/images/Rectangle 50vodafone.png',
 ];

@@ -8,7 +8,7 @@ class IntroScreen4 extends StatefulWidget {
 }
 
 class _IntroScreen4State extends State<IntroScreen4> {
-  TextEditingController _momoController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +35,7 @@ class _IntroScreen4State extends State<IntroScreen4> {
               height: 15.0,
             ),
             TextField(
-              controller: _momoController,
+              controller: _emailController,
               keyboardType: TextInputType.emailAddress,
               style: TextStyle(
                 fontFamily: 'Manrope',

@@ -2,13 +2,13 @@ import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/enum/constants.dart';
 import 'package:flutter/material.dart';
 
-class IntroScreen5 extends StatefulWidget {
+class IntroScreen6 extends StatefulWidget {
 
   @override
-  _IntroScreen5State createState() => _IntroScreen5State();
+  _IntroScreen6State createState() => _IntroScreen6State();
 }
 
-class _IntroScreen5State extends State<IntroScreen5> {
+class _IntroScreen6State extends State<IntroScreen6> {
   TextEditingController _momoController = TextEditingController();
 
   String _currentSelectedValue;
@@ -115,13 +115,66 @@ class _IntroScreen5State extends State<IntroScreen5> {
               ),
             ),
             SizedBox(
+              height: 25.0,
+            ),
+            Row(
+              children: [
+                Text(
+                  'Account Name',
+                  style: TextStyle(
+                    fontFamily: 'Manrope',
+                    fontSize: 12.0,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF555E6C)
+                  ),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 5.0,
+            ),
+            Row(
+              children: [
+                Text(
+                  'Sebastian Livingstone',
+                  style: TextStyle(
+                    fontFamily: 'Manrope',
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF243656)
+                  ),
+                )
+              ],
+            ),
+            SizedBox(
               height: 40.0,
             ),
             Spacer(),
             SafeArea(
-              child: DefaultButton(
-                text: 'Next',
-                press: () {},
+              child: Column(
+                children: [
+                  Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Not my account',
+                  style: TextStyle(
+                    fontFamily: 'Manrope',
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF555E6C)
+                  ),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 25.0,
+            ),
+                  DefaultButton(
+                    text: 'Next',
+                    press: () {},
+                  ),
+                ],
               ),
             ),
             SizedBox(
