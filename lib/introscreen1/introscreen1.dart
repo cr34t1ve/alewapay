@@ -44,6 +44,12 @@ class _IntroScreen1State extends State<IntroScreen1> {
                   // _phoneController.text.length == 10 ? true : false;
                 });
               },
+              style: TextStyle(
+                fontFamily: 'Manrope',
+                fontSize: 25.0,
+                fontWeight: FontWeight.w400,
+                color: Color(0xFF555E6C)
+              ),
               decoration: InputDecoration(
                   hintText: 'Phone',
                   border: InputBorder.none,
