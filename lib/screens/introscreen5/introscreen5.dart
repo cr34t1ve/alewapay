@@ -1,13 +1,13 @@
 import 'package:alewa_pay/components/button.dart';
 import 'package:flutter/material.dart';
 
-class IntroScreen4 extends StatefulWidget {
+class IntroScreen5 extends StatefulWidget {
 
   @override
-  _IntroScreen4State createState() => _IntroScreen4State();
+  _IntroScreen5State createState() => _IntroScreen5State();
 }
 
-class _IntroScreen4State extends State<IntroScreen4> {
+class _IntroScreen5State extends State<IntroScreen5> {
   TextEditingController _momoController = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class _IntroScreen4State extends State<IntroScreen4> {
             Row(
               children: [
                 Text(
-                  'Enter your email address',
+                  'Link your Momo account',
                   style: TextStyle(
                       fontFamily: 'Manrope',
                       fontSize: 18.0,
@@ -45,7 +45,9 @@ class _IntroScreen4State extends State<IntroScreen4> {
               ),
               decoration: InputDecoration(
                   hintText: 'Email',
-                  border: InputBorder.none,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8.0)
+                  ),
                   hintStyle: TextStyle(
                       fontFamily: 'Manrope',
                       fontSize: 18.0,
