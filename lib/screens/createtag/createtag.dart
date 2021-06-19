@@ -56,25 +56,25 @@ class _CreateTagState extends State<CreateTag> {
               keyboardType: TextInputType.text,
               onChanged: (val) {
                 setState(() {
-                                  tag = val;
-                                });
+                  tag = val;
+                });
               },
               style: TextStyle(
-                        fontFamily: 'Manrope',
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.w400,
-                        color: Color(0xFF555E6C)
-                      ),
+                  fontFamily: 'Manrope',
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.w400,
+                  color: Color(0xFF555E6C)),
               decoration: InputDecoration(
-                prefixIcon: Text(
-                  '\$',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF434190)),
-                ),
-                prefixIconConstraints: BoxConstraints(minWidth: 0, minHeight: 0),
+                  prefixIcon: Text(
+                    '\$',
+                    style: TextStyle(
+                        fontFamily: 'Manrope',
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xFF434190)),
+                  ),
+                  prefixIconConstraints:
+                      BoxConstraints(minWidth: 0, minHeight: 0),
                   // prefixStyle: TextStyle(
                   //     fontFamily: 'Manrope',
                   //     fontSize: 18.0,
@@ -99,10 +99,10 @@ class _CreateTagState extends State<CreateTag> {
             ),
             Spacer(),
             SafeArea(
-                  child: DefaultButton(
-                    text: 'Finish',
-                    press: () {},
-                  ),
+              child: DefaultButton(
+                text: 'Finish',
+                press: () {},
+              ),
             ),
             SizedBox(
               height: 10.0,
