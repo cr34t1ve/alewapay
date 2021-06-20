@@ -1,5 +1,6 @@
 import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/components/contacttile.dart';
+import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -9,8 +10,68 @@ class Invite1p5 extends StatefulWidget {
 }
 
 class _Invite1p5State extends State<Invite1p5> {
+  bool someBool = false;
+  TextEditingController searchController = TextEditingController();
+  List<Contact> contacts = [];
+  List<Contact> contactsFiltered = [];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getAllContacts();
+    searchController.addListener(() {
+      filterContacts();
+    });
+  }
+
+  String flattenPhoneNumber(String phoneStr) {
+    return phoneStr.replaceAllMapped(RegExp(r'^(\+)|\D'), (Match m) {
+      return m[0] == '+' ? '+' : '';
+    });
+  }
+
+  filterContacts() {
+    List<Contact> _contacts = [];
+    _contacts.addAll(contacts);
+    if (searchController.text.isNotEmpty) {
+      _contacts.retainWhere((contact) {
+        String searchTerm = searchController.text.toLowerCase();
+        String searchTermFlatten = flattenPhoneNumber(searchTerm);
+        String contactName = contact.displayName.toLowerCase();
+        bool nameMatches = contactName.contains(searchTerm);
+        if (nameMatches == true) {
+          return true;
+        }
+
+        if (searchTermFlatten.isEmpty) {
+          return false;
+        }
+
+        var phone = contact.phones.firstWhere((phn) {
+          String phnFlattened = flattenPhoneNumber(phn.value);
+          return phnFlattened.contains(searchTermFlatten);
+        }, orElse: () => null);
+        return phone != null;
+      });
+
+      setState(() {
+        contactsFiltered = _contacts;
+      });
+    }
+  }
+
+  getAllContacts() async {
+    List<Contact> _contacts =
+        (await ContactsService.getContacts(iOSLocalizedLabels: true)).toList();
+    setState(() {
+      contacts = _contacts;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    bool isSearching = searchController.text.isNotEmpty;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -91,7 +152,7 @@ class _Invite1p5State extends State<Invite1p5> {
                             BoxConstraints(minWidth: 0, minHeight: 0),
                       ),
                     ),
-                    
+
                     // SafeArea(
                     //   child: DefaultButton(
                     //     text: 'Continue',
@@ -127,10 +188,22 @@ class _Invite1p5State extends State<Invite1p5> {
                 ),
               ),
               Expanded(
-                child: ListView(
-                  children: [ContactTile()],
-                ),
-              )
+                  child: ListView.builder(
+                shrinkWrap: true,
+                itemCount: isSearching == true
+                    ? contactsFiltered.length
+                    : contacts.length,
+                itemBuilder: (context, index) {
+                  Contact contact = isSearching == true
+                      ? contactsFiltered[index]
+                      : contacts[index];
+                  return ContactTile(
+                    title:
+                        '${contact.displayName} (${contact.phones.elementAt(0).label})',
+                    subtitle: contact.phones.elementAt(0).value,
+                  );
+                },
+              ))
             ],
           ),
           Positioned(
@@ -157,5 +230,3 @@ class _Invite1p5State extends State<Invite1p5> {
     );
   }
 }
-
-
