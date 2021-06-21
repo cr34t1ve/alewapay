@@ -11,12 +11,13 @@ import 'package:alewa_pay/screens/invite/invite.dart';
 import 'package:alewa_pay/screens/invite/invite1_5.dart';
 import 'package:alewa_pay/screens/setuppin/setuppin.dart';
 import 'package:alewa_pay/screens/splash/splash.dart';
+import 'package:alewa_pay/screens/wallet/wallet.dart';
 import 'package:alewa_pay/screens/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Home(),
+    home: Wallet(),
   ));
 }
 
