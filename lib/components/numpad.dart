@@ -111,7 +111,7 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
               fontFamily: 'Manrope',
               fontSize: 24,
               fontWeight: FontWeight.w600,
-              //color: Colors.black
+              color: Colors.white
             ),
           ),
         ));
