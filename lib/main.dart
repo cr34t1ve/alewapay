@@ -1,3 +1,4 @@
+import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:alewa_pay/screens/confirmpin/confirmpin.dart';
 import 'package:alewa_pay/screens/createtag/createtag.dart';
 import 'package:alewa_pay/screens/home/home.dart';
@@ -16,8 +17,30 @@ import 'package:alewa_pay/screens/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Wallet(),
-  ));
+  runApp(MediaQ());
 }
 
+class MediaQ extends StatelessWidget {
+  const MediaQ({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MyApp(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    SizeConfig().init(context);
+    return MaterialApp(
+      home: Wallet(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
