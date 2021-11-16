@@ -1,4 +1,5 @@
 import 'package:alewa_pay/components/button.dart';
+import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
 
 class IntroScreen3 extends StatefulWidget {
@@ -17,33 +18,24 @@ class _IntroScreen3State extends State<IntroScreen3> {
         child: Column(
           children: [
             SizedBox(
-              height: 104.0,
+              height: getProportionateScreenHeight(104.0),
             ),
             Row(
               children: [
                 Text(
                   'Enter your first and last name',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF243656)),
+                  style: Theme.of(context).textTheme.headline2,
                 ),
               ],
             ),
             SizedBox(
-              height: 15.0,
+              height: getProportionateScreenHeight(15.0),
             ),
             TextField(
               controller: _nameController,
               keyboardType: TextInputType.name,
               textCapitalization: TextCapitalization.words,
-              style: TextStyle(
-                fontFamily: 'Manrope',
-                fontSize: 25.0,
-                fontWeight: FontWeight.w400,
-                color: Color(0xFF555E6C)
-              ),
+              style: Theme.of(context).textTheme.bodyText1,
               decoration: InputDecoration(
                   hintText: 'Full Name',
                   border: InputBorder.none,
@@ -54,7 +46,7 @@ class _IntroScreen3State extends State<IntroScreen3> {
                       color: Color(0xFFCBD5E0))),
             ),
             SizedBox(
-              height: 40.0,
+              height: getProportionateScreenHeight(40.0),
             ),
             Spacer(),
             SafeArea(
@@ -64,7 +56,7 @@ class _IntroScreen3State extends State<IntroScreen3> {
               ),
             ),
             SizedBox(
-              height: 10.0,
+              height: getProportionateScreenHeight(10.0),
             )
           ],
         ),

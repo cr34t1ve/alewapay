@@ -1,5 +1,6 @@
 import 'package:alewa_pay/components/numpad.dart';
 import 'package:alewa_pay/enum/constants.dart';
+import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -42,7 +43,8 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding:
+            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
         child: Column(
           children: [
             // SizedBox(
@@ -82,23 +84,23 @@ class _HomeState extends State<Home> {
               style: TextStyle(
                   fontFamily: 'Manrope',
                   fontWeight: FontWeight.w500,
-                  fontSize: 50,
+                  fontSize: getProportionateScreenWidth(50),
                   color: Colors.white),
             ),
             Text(
               'Balance: ₵$accountBalance',
               style: TextStyle(
                   fontFamily: 'Manrope',
-                  fontSize: 14.0,
+                  fontSize: getProportionateScreenWidth(14.0),
                   fontWeight: FontWeight.w500,
                   color: Color(0xFFAFB0D1)),
             ),
             SizedBox(
-              height: 74.0,
+              height: getProportionateScreenHeight(74.0),
             ),
             NumericKeyboard(
               onKeyboardTap: _onKeyboardTap,
-              textColor: Colors.pink,
+              textColor: Color(0xFFAFB0D1),
               rightButtonFn: () {
                 setState(() {
                   text = text.substring(0, text.length - 1);
@@ -106,7 +108,7 @@ class _HomeState extends State<Home> {
               },
               rightIcon: Icon(
                 Icons.backspace_outlined,
-                color: Colors.white,
+                color: Color(0xFFAFB0D1),
               ),
               leftButtonFn: () {
                 print('left button clicked');
@@ -120,8 +122,8 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  width: 149.0,
-                  height: 48,
+                  width: getProportionateScreenWidth(149.0),
+                  height: getProportionateScreenHeight(48),
                   decoration: BoxDecoration(
                     color: Color(0xFF4C4A95),
                     borderRadius: BorderRadius.circular(6),
@@ -131,21 +133,21 @@ class _HomeState extends State<Home> {
                     'Request Cash',
                     style: TextStyle(
                         fontFamily: 'Manrope',
-                        fontSize: 14.0,
+                        fontSize: getProportionateScreenWidth(14.0),
                         fontWeight: FontWeight.w500,
                         color: Color(0xFFF7FAFC)),
                   )),
                 ),
                 Container(
-                  width: 149.0,
-                  height: 48,
+                  width: getProportionateScreenWidth(149.0),
+                  height: getProportionateScreenHeight(48),
                   decoration: BoxDecoration(color: Color(0xFF4C4A95)),
                   child: Center(
                       child: Text(
                     'Send Cash',
                     style: TextStyle(
                         fontFamily: 'Manrope',
-                        fontSize: 14.0,
+                        fontSize: getProportionateScreenWidth(14.0),
                         fontWeight: FontWeight.w500,
                         color: Color(0xFFF7FAFC)),
                   )),

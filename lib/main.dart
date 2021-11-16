@@ -21,7 +21,7 @@ void main() {
 }
 
 class MediaQ extends StatelessWidget {
-  const MediaQ({Key key}) : super(key: key);
+  const MediaQ({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,14 +33,93 @@ class MediaQ extends StatelessWidget {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      home: Wallet(),
+      initialRoute: '/wallet',
+      routes: {
+        '/wallet': (context) => Wallet(),
+        '/confirmpin': (context) => ConfirmPin(),
+        '/home': (context) => Home(),
+        '/welcome': (context) => Welcome(),
+        '/splash': (context) => Splash(),
+        '/introscreen1': (context) => IntroScreen1(),
+        '/introscreen2': (context) => IntroScreen2(),
+        '/introscreen3': (context) => IntroScreen3(),
+        '/introscreen4': (context) => IntroScreen4(),
+        '/introscreen5': (context) => IntroScreen5(),
+        '/introscreen6': (context) => IntroScreen6(),
+        '/createtag': (context) => CreateTag(),
+        '/invite': (context) => Invite(),
+        '/invite1.5': (context) => Invite1p5(),
+        '/setuppin': (context) => SetupPin(),
+      },
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+          fontFamily: 'Manrope',
+          iconTheme: IconThemeData(
+            color: Color(0xFF243656),
+          ),
+          appBarTheme: AppBarTheme(
+              brightness: Brightness.light, backgroundColor: Colors.white),
+          textTheme: TextTheme(
+              headline1: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 50,
+                  color: Color(0xFF243656)),
+              headline2: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w600,
+                  color: Color(0xFF243656)),
+              headline3: TextStyle(
+                  color: Color(0xFF555E6C),
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14),
+              bodyText1: TextStyle(
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.w400,
+                  color: Color(0xFF555E6C)),
+              subtitle1: TextStyle(
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xFF555E6C)),
+              subtitle2: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14))),
+      darkTheme: ThemeData(
+          scaffoldBackgroundColor: Colors.black,
+          fontFamily: 'Manrope',
+          iconTheme: IconThemeData(
+            color: Colors.white,
+          ),
+          appBarTheme: AppBarTheme(
+              brightness: Brightness.dark, backgroundColor: Color(0xFF09090A)),
+          textTheme: TextTheme(
+              headline1: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 50,
+                  color: Colors.white),
+              headline2: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white),
+              bodyText1: TextStyle(
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white),
+              subtitle1: TextStyle(
+                  fontSize: 12.0,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.white),
+              subtitle2: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14))),
     );
   }
 }

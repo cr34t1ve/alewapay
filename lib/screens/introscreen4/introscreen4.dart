@@ -1,4 +1,5 @@
 import 'package:alewa_pay/components/button.dart';
+import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
 
 class IntroScreen4 extends StatefulWidget {
@@ -31,25 +32,17 @@ class _IntroScreen4State extends State<IntroScreen4> {
               children: [
                 Text(
                   'Enter your email address',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF243656)),
+                  style: Theme.of(context).textTheme.headline2,
                 ),
               ],
             ),
             SizedBox(
-              height: 15.0,
+              height: getProportionateScreenHeight(15.0),
             ),
             TextField(
               controller: _emailController,
               keyboardType: TextInputType.emailAddress,
-              style: TextStyle(
-                  fontFamily: 'Manrope',
-                  fontSize: 25.0,
-                  fontWeight: FontWeight.w400,
-                  color: Color(0xFF555E6C)),
+              style: Theme.of(context).textTheme.bodyText2,
               decoration: InputDecoration(
                   hintText: 'Email',
                   border: InputBorder.none,
@@ -60,7 +53,7 @@ class _IntroScreen4State extends State<IntroScreen4> {
                       color: Color(0xFFCBD5E0))),
             ),
             SizedBox(
-              height: 40.0,
+              height: getProportionateScreenHeight(40.0),
             ),
             Spacer(),
             SafeArea(

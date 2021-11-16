@@ -1,5 +1,6 @@
 import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/components/contacttile.dart';
+import 'package:collection/collection.dart' show IterableExtension;
 import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -38,7 +39,7 @@ class _Invite1p5State extends State<Invite1p5> {
       _contacts.retainWhere((contact) {
         String searchTerm = searchController.text.toLowerCase();
         String searchTermFlatten = flattenPhoneNumber(searchTerm);
-        String contactName = contact.displayName.toLowerCase();
+        String contactName = contact.displayName!.toLowerCase();
         bool nameMatches = contactName.contains(searchTerm);
         if (nameMatches == true) {
           return true;
@@ -48,10 +49,10 @@ class _Invite1p5State extends State<Invite1p5> {
           return false;
         }
 
-        var phone = contact.phones.firstWhere((phn) {
-          String phnFlattened = flattenPhoneNumber(phn.value);
+        var phone = contact.phones!.firstWhereOrNull((phn) {
+          String phnFlattened = flattenPhoneNumber(phn.value!);
           return phnFlattened.contains(searchTermFlatten);
-        }, orElse: () => null);
+        });
         return phone != null;
       });
 
@@ -127,6 +128,7 @@ class _Invite1p5State extends State<Invite1p5> {
                       height: 10.0,
                     ),
                     TextField(
+                      controller: searchController,
                       style: TextStyle(
                           fontFamily: 'Manrope',
                           fontSize: 12.0,
@@ -199,8 +201,8 @@ class _Invite1p5State extends State<Invite1p5> {
                       : contacts[index];
                   return ContactTile(
                     title:
-                        '${contact.displayName} (${contact.phones.elementAt(0).label})',
-                    subtitle: contact.phones.elementAt(0).value,
+                        '${contact.displayName} (${contact.phones!.elementAt(0).label ?? ''})',
+                    subtitle: contact.phones!.elementAt(0).value,
                   );
                 },
               ))

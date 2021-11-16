@@ -1,4 +1,5 @@
 import 'package:alewa_pay/components/numpad.dart';
+import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
@@ -24,7 +25,6 @@ class _ConfirmPinState extends State<ConfirmPin> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
         elevation: 0.0,
         actions: [
           IconButton(
@@ -39,11 +39,7 @@ class _ConfirmPinState extends State<ConfirmPin> {
             child: Center(
               child: Text(
                 'Cancel',
-                style: TextStyle(
-                    color: Colors.black,
-                    fontFamily: 'Manrope',
-                    fontSize: 14.0,
-                    fontWeight: FontWeight.w500),
+                style: Theme.of(context).textTheme.headline3,
               ),
             ),
           )
@@ -57,11 +53,7 @@ class _ConfirmPinState extends State<ConfirmPin> {
               children: [
                 Text(
                   'Confirm your Alewa PIN',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF243656)),
+                  style: Theme.of(context).textTheme.headline2,
                 ),
               ],
             ),
@@ -114,11 +106,11 @@ class _ConfirmPinState extends State<ConfirmPin> {
               ],
             ),
             SizedBox(
-              height: 276.0,
+              height: getProportionateScreenHeight(276.0),
             ),
             NumericKeyboard(
               onKeyboardTap: _onKeyboardTap,
-              textColor: Colors.black,
+              textColor: Color(0xFF555E6C),
               rightButtonFn: () {
                 setState(() {
                   _confirmPinController.text = _confirmPinController.text

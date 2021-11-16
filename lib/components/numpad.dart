@@ -1,5 +1,6 @@
 library numeric_keyboard;
 
+import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
 
 typedef KeyboardTapCallback = void Function(String text);
@@ -9,16 +10,16 @@ class NumericKeyboard extends StatefulWidget {
   final Color textColor;
 
   /// Display a custom right icon
-  final Icon rightIcon;
+  final Icon? rightIcon;
 
   /// Action to trigger when right button is pressed
-  final Function() rightButtonFn;
+  final Function()? rightButtonFn;
 
   /// Display a custom left icon
-  final Icon leftIcon;
+  final Icon? leftIcon;
 
   /// Action to trigger when left button is pressed
-  final Function() leftButtonFn;
+  final Function()? leftButtonFn;
 
   /// Callback when an item is pressed
   final KeyboardTapCallback onKeyboardTap;
@@ -27,8 +28,8 @@ class NumericKeyboard extends StatefulWidget {
   final MainAxisAlignment mainAxisAlignment;
 
   NumericKeyboard(
-      {Key key,
-      @required this.onKeyboardTap,
+      {Key? key,
+      required this.onKeyboardTap,
       this.textColor = Colors.black,
       this.rightButtonFn,
       this.rightIcon,
@@ -79,14 +80,14 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
             alignment: widget.mainAxisAlignment,
             children: <Widget>[
               _calcButton('0'),
-              _calcButton('.     '),
+              _calcButton('.  '),
               InkWell(
                   borderRadius: BorderRadius.circular(45),
                   onTap: widget.rightButtonFn,
                   child: Container(
                       alignment: Alignment.center,
-                      width: 50,
-                      height: 50,
+                      width: getProportionateScreenWidth(50.0),
+                      height: getProportionateScreenHeight(50.0),
                       child: widget.rightIcon))
             ],
           ),
@@ -103,15 +104,15 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
         },
         child: Container(
           alignment: Alignment.center,
-          width: 72.75,
-          height: 72,
+          width: getProportionateScreenWidth(72.75),
+          height: getProportionateScreenHeight(72),
           child: Text(
             value,
             style: TextStyle(
               fontFamily: 'Manrope',
               fontSize: 24,
               fontWeight: FontWeight.w600,
-              color: Colors.white
+              color: widget.textColor
             ),
           ),
         ));

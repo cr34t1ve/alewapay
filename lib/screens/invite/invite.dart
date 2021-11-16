@@ -1,4 +1,5 @@
 import 'package:alewa_pay/components/button.dart';
+import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
 
 class Invite extends StatefulWidget {
@@ -20,11 +21,7 @@ class _InviteState extends State<Invite> {
             padding: EdgeInsets.only(right: 20.0),
             child: Text(
               'Skip',
-                style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 14.0,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF555E6C)),
+                style: Theme.of(context).textTheme.headline3,
             ),
           )
         ],
@@ -37,38 +34,30 @@ class _InviteState extends State<Invite> {
               children: [
                 Image.asset(
                   'assets/images/image 3.png',
-                  height: 64.0,
-                  width: 64.0,
+                  height: getProportionateScreenHeight(64.0),
+                  width: getProportionateScreenWidth(64.0),
                 )
               ],
             ),
             SizedBox(
-              height: 5.0,
+              height: getProportionateScreenHeight(5.0),
             ),
             Row(
               children: [
                 Text(
                   'Invite friends and get\nGHS1.00 each',
-                   style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF243656)),
+                   style: Theme.of(context).textTheme.headline2,
                 )
               ],
             ),
             SizedBox(
-              height: 10.0,
+              height: getProportionateScreenHeight(10.0),
             ),
             Row(
               children: [
                 Text(
                   'Allow contact Access to easily\ninvite your friends',
-                   style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF555E6C)),
+                   style: Theme.of(context).textTheme.subtitle1,
                 )
               ],
             ),
@@ -80,7 +69,7 @@ class _InviteState extends State<Invite> {
                   ),
             ),
             SizedBox(
-              height: 10.0,
+              height: getProportionateScreenHeight(10.0),
             )
           ],
         ),

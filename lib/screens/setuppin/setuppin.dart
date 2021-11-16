@@ -106,7 +106,7 @@ class _SetupPinState extends State<SetupPin> {
             ),
             NumericKeyboard(
               onKeyboardTap: _onKeyboardTap,
-              textColor: Colors.black,
+              textColor: Color(0xFF555E6C),
               rightButtonFn: () {
                 setState(() {
                   _setupPinController.text = _setupPinController.text

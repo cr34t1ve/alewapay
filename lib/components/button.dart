@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 class DefaultButton extends StatelessWidget {
   const DefaultButton({
-    Key key,
+    Key? key,
     this.text,
     this.press,
   }) : super(key: key);
-  final String text;
-  final Function press;
+  final String? text;
+  final Function? press;
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +21,10 @@ class DefaultButton extends StatelessWidget {
           ),
         color: Color(0xFF434190),
         child: Text(
-          text,
-          style: TextStyle(
-              color: Colors.white,
-              fontFamily: 'Manrope',
-              fontWeight: FontWeight.w600,
-              fontSize: 14),
+          text!,
+          style: Theme.of(context).textTheme.subtitle2,
         ),
-        onPressed: press,
+        onPressed: press as void Function()?,
       ),
     );
   }

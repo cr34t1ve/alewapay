@@ -1,5 +1,6 @@
 import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/enum/constants.dart';
+import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
 
 class IntroScreen5 extends StatefulWidget {
@@ -11,7 +12,7 @@ class IntroScreen5 extends StatefulWidget {
 class _IntroScreen5State extends State<IntroScreen5> {
   TextEditingController _momoController = TextEditingController();
 
-  String _currentSelectedValue;
+  String? _currentSelectedValue;
 
   @override
     void initState() {
@@ -28,25 +29,21 @@ class _IntroScreen5State extends State<IntroScreen5> {
         child: Column(
           children: [
             SizedBox(
-              height: 104.0,
+              height: getProportionateScreenHeight(104.0),
             ),
             Row(
               children: [
                 Text(
                   'Link your Momo account',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF243656)),
+                  style: Theme.of(context).textTheme.headline2,
                 ),
               ],
             ),
             SizedBox(
-              height: 15.0,
+              height: getProportionateScreenHeight(15.0),
             ),
             Container(
-              height: 60.0,
+              height: getProportionateScreenHeight(60.0),
               decoration: BoxDecoration(
                       border: Border.all(
                         color: Color(0xFFCBD5E0),
@@ -56,14 +53,14 @@ class _IntroScreen5State extends State<IntroScreen5> {
               child: Row(
                 children: [
                   Container(
-                    width: 90.0,
-                    height: 60.0,
+                    width: getProportionateScreenWidth(90.0),
+                    height: getProportionateScreenHeight(60.0),
                     child: Center(
                       child: DropdownButtonHideUnderline(
                         child: DropdownButton(
                           icon: Icon(Icons.keyboard_arrow_down_sharp),
                         value: _currentSelectedValue,
-                        onChanged: (String newValue) {
+                        onChanged: (String? newValue) {
                           setState(() {
                             _currentSelectedValue = newValue;
                             // state.didChange(newValue);
@@ -74,8 +71,8 @@ class _IntroScreen5State extends State<IntroScreen5> {
                             value: value,
                             child: Image.asset(
                               value,
-                              height: 28.0,
-                              width: 28.0,
+                              height: getProportionateScreenHeight(28.0),
+                                width: getProportionateScreenWidth(28.0),
                             ),
                           );
                         }).toList(),
@@ -89,17 +86,14 @@ class _IntroScreen5State extends State<IntroScreen5> {
                     color: Color(0xFFCBD5E0),
                   ),
                   Container(
-                    width: 242.0,
-                    height: 60.0,
+                    width: getProportionateScreenWidth(242.0),
+                    height: getProportionateScreenHeight(60.0),
                     child: TextFormField(
+                      // address max length without footer
+                      // maxLength: 10,
                       controller: _momoController,
                       keyboardType: TextInputType.number,
-                      style: TextStyle(
-                        fontFamily: 'Manrope',
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.w400,
-                        color: Color(0xFF555E6C)
-                      ),
+                      style: Theme.of(context).textTheme.bodyText1,
                       decoration: InputDecoration(
                         contentPadding: EdgeInsets.only(left: 20),
                           hintText: 'Phone number',
@@ -115,7 +109,7 @@ class _IntroScreen5State extends State<IntroScreen5> {
               ),
             ),
             SizedBox(
-              height: 40.0,
+              height: getProportionateScreenHeight(40.0),
             ),
             Spacer(),
             SafeArea(

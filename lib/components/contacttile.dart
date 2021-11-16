@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ContactTile extends StatefulWidget {
   ContactTile({
-    Key key,
+    Key? key,
     this.title,
     this.subtitle,
     this.trailing,
@@ -10,10 +10,10 @@ class ContactTile extends StatefulWidget {
     // this.getCedi,
     // this.sentInvite,
   }) : super(key: key);
-  final String title;
-  final String subtitle;
-  final String trailing;
-  final VoidCallback stateSetter;
+  final String? title;
+  final String? subtitle;
+  final String? trailing;
+  final VoidCallback? stateSetter;
 
   @override
   _ContactTileState createState() => _ContactTileState();
@@ -25,7 +25,7 @@ class _ContactTileState extends State<ContactTile> {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(
-        widget.title,
+        widget.title!,
         style: TextStyle(
             fontFamily: 'Manrope',
             fontSize: 14,
@@ -33,7 +33,7 @@ class _ContactTileState extends State<ContactTile> {
             color: Color(0xFF243656)),
       ),
       subtitle: Text(
-        widget.subtitle,
+        widget.subtitle!,
         style: TextStyle(
             fontFamily: 'Manrope',
             fontSize: 12,
