@@ -31,6 +31,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Color(0xFF434190),
       appBar: AppBar(
+        brightness: Brightness.dark,
         backgroundColor: Color(0xFF434190),
         elevation: 0.0,
         title: RichText(
