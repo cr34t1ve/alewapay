@@ -33,7 +33,7 @@ class _DepositCash1State extends State<DepositCash1> {
       body: Column(
         children: [
           SizedBox(
-            height: getProportionateScreenHeight(60.0),
+            height: getProportionateScreenHeight(55.0),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -98,7 +98,9 @@ class _DepositCash1State extends State<DepositCash1> {
           ),
           DefaultButton(
             text: 'Next',
-            press: () {},
+            press: () {
+              // navigator send amount and recipient details to page 2
+            },
           )
         ],
       ),
