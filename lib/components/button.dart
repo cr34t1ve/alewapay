@@ -22,7 +22,7 @@ class DefaultButton extends StatelessWidget {
         color: Color(0xFF434190),
         child: Text(
           text!,
-          style: Theme.of(context).textTheme.subtitle2,
+          style: Theme.of(context).textTheme.headline4,
         ),
         onPressed: press as void Function()?,
       ),

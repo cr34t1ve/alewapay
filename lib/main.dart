@@ -61,13 +61,16 @@ class MyApp extends StatelessWidget {
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
+          scaffoldBackgroundColor: Color(0xFFE5E5E5),
           fontFamily: 'Manrope',
           iconTheme: IconThemeData(
             color: Color(0xFF243656),
           ),
           appBarTheme: AppBarTheme(
-              brightness: Brightness.light, backgroundColor: Colors.white),
+              brightness: Brightness.light,
+              backgroundColor: Color(0xFFE5E5E5),
+              elevation: 0.0,
+              iconTheme: IconThemeData(color: Color(0xFF243656))),
           textTheme: TextTheme(
               headline1: TextStyle(
                   fontWeight: FontWeight.w500,
@@ -81,9 +84,17 @@ class MyApp extends StatelessWidget {
                   color: Color(0xFF555E6C),
                   fontWeight: FontWeight.w600,
                   fontSize: 14),
+              headline4: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.w600,
+                  color: Color(0xFFF7FAFC)),
               bodyText1: TextStyle(
                   fontSize: 25.0,
                   fontWeight: FontWeight.w400,
+                  color: Color(0xFF555E6C)),
+              bodyText2: TextStyle(
+                  fontSize: 14.0,
+                  fontWeight: FontWeight.w500,
                   color: Color(0xFF555E6C)),
               subtitle1: TextStyle(
                   fontSize: 12.0,
