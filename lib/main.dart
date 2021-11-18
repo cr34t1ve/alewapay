@@ -4,6 +4,7 @@ import 'package:alewa_pay/screens/createtag/createtag.dart';
 import 'package:alewa_pay/screens/deposit%20cash/confirm_deposit_pin.dart';
 import 'package:alewa_pay/screens/deposit%20cash/deposit_cash2.dart';
 import 'package:alewa_pay/screens/deposit%20cash/deposit_cash_1.dart';
+import 'package:alewa_pay/screens/deposit%20cash/deposit_successful.dart';
 import 'package:alewa_pay/screens/home/home.dart';
 import 'package:alewa_pay/screens/introscreen1/introscreen1.dart';
 import 'package:alewa_pay/screens/introscreen2/introscreen2.dart';
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/confirmdepositpin',
+      initialRoute: '/depositsuccessful',
       routes: {
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),
@@ -61,7 +62,8 @@ class MyApp extends StatelessWidget {
         '/setuppin': (context) => SetupPin(),
         '/depositcash1': (context) => DepositCash1(),
         '/depositcash2': (context) => DepositCash2(),
-        '/confirmdepositpin': (context) => ConfirmDepositPin()
+        '/confirmdepositpin': (context) => ConfirmDepositPin(),
+        '/depositsuccessful': (context) => DepositSuccessful(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
