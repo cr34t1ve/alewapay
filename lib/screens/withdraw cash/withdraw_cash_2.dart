@@ -22,7 +22,7 @@ class _WithdrawCash2State extends State<WithdrawCash2> {
           icon: Icon(Icons.chevron_left),
         ),
         title: Text(
-          'Deposits',
+          'Withdraw',
           style: Theme.of(context).appBarTheme.titleTextStyle,
         ),
       ),
@@ -62,7 +62,7 @@ class _WithdrawCash2State extends State<WithdrawCash2> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('Amount to deposit',
+              Text('Amount to Withdraw',
                   style: Theme.of(context).textTheme.bodyText2)
             ],
           ),
@@ -144,7 +144,7 @@ class _WithdrawCash2State extends State<WithdrawCash2> {
             padding: EdgeInsets.symmetric(
                 horizontal: getProportionateScreenWidth(21.0)),
             child: DefaultButton(
-              text: 'Add  GHS 3,400.78',
+              text: 'Withdraw',
               press: () {},
             ),
           )

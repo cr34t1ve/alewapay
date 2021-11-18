@@ -22,7 +22,7 @@ class _DepositCash2State extends State<DepositCash2> {
           icon: Icon(Icons.chevron_left),
         ),
         title: Text(
-          'Deposits',
+          'Deposit',
           style: Theme.of(context).appBarTheme.titleTextStyle,
         ),
       ),
