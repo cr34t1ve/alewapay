@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/withdrawcash2',
+      initialRoute: '/confirmwithdrawpin',
       routes: {
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),
@@ -67,7 +67,8 @@ class MyApp extends StatelessWidget {
         '/confirmdepositpin': (context) => ConfirmDepositPin(),
         '/depositsuccessful': (context) => DepositSuccessful(),
         '/withdrawcash1': (context) => WithdrawCash1(),
-        '/withdrawcash2': (context) => WithdrawCash2()
+        '/withdrawcash2': (context) => WithdrawCash2(),
+        '/confirmwithdrawpin': (context) => ConfirmDepositPin(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
