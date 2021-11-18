@@ -86,8 +86,8 @@ class _NumericKeyboardState extends State<NumericKeyboard> {
                   onTap: widget.rightButtonFn,
                   child: Container(
                       alignment: Alignment.center,
-                      width: getProportionateScreenWidth(50.0),
-                      height: getProportionateScreenHeight(50.0),
+                      width: getProportionateScreenWidth(72.75),
+                      height: getProportionateScreenHeight(72.0),
                       child: widget.rightIcon))
             ],
           ),

@@ -51,7 +51,7 @@ class _DepositCash1State extends State<DepositCash1> {
                   children: <TextSpan>[
                     TextSpan(text: '₵ '),
                     TextSpan(
-                      text: '0.00',
+                      text: text == '' ? '0.00' : text,
                       style: TextStyle(
                           fontFamily: 'Manrope',
                           fontWeight: FontWeight.w500,
