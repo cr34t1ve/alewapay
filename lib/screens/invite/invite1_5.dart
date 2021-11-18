@@ -58,15 +58,20 @@ class _Invite1p5State extends State<Invite1p5> {
 
       setState(() {
         contactsFiltered = _contacts;
+        print(contactsFiltered.length);
       });
     }
   }
 
   getAllContacts() async {
-    List<Contact> _contacts =
-        (await ContactsService.getContacts(iOSLocalizedLabels: true)).toList();
+    List<Contact> _contacts = (await ContactsService.getContacts(
+            iOSLocalizedLabels: true,
+            orderByGivenName: true,
+            withThumbnails: false))
+        .toList();
     setState(() {
       contacts = _contacts;
+      print(contacts.length);
     });
   }
 
@@ -201,8 +206,10 @@ class _Invite1p5State extends State<Invite1p5> {
                       : contacts[index];
                   return ContactTile(
                     title:
-                        '${contact.displayName} (${contact.phones!.elementAt(0).label ?? ''})',
-                    subtitle: contact.phones!.elementAt(0).value,
+                        '${contact.displayName ?? ''} ${contact.phones!.length != 0 ? contact.phones!.elementAt(0).label : ''}',
+                    subtitle: contact.phones!.length != 0
+                        ? contact.phones!.elementAt(0).value
+                        : '',
                   );
                 },
               ))
