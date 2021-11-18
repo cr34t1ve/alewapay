@@ -33,6 +33,29 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         backgroundColor: Color(0xFF434190),
         elevation: 0.0,
+        title: RichText(
+          textAlign: TextAlign.center,
+          text: TextSpan(
+            // Note: Styles for TextSpans must be explicitly defined.
+            // Child text spans will inherit styles from parent
+            style: TextStyle(
+                fontFamily: 'Manrope',
+                fontWeight: FontWeight.w500,
+                fontSize: 14,
+                color: Colors.white.withOpacity(0.3)),
+            children: <TextSpan>[
+              TextSpan(text: 'Your Balance: '),
+              TextSpan(
+                text: '₵345.78',
+                style: TextStyle(
+                    fontFamily: 'Manrope',
+                    fontWeight: FontWeight.w500,
+                    fontSize: 14,
+                    color: Colors.white),
+              )
+            ],
+          ),
+        ),
         leading: IconButton(
             onPressed: () {},
             icon: SvgPicture.asset('assets/images/Vector.svg')),
@@ -47,53 +70,16 @@ class _HomeState extends State<Home> {
             EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
         child: Column(
           children: [
-            // SizedBox(
-            //   height: 60.0,
-            // ),
-            // Container(
-            //   height: 68.0,
-            //   width: 160.0,
-            //   alignment: Alignment.center,
-            //   child: TextField(
-            //     controller: _cashController,
-            //     readOnly: true,
-            //     textAlign: TextAlign.center,
-            //     decoration: InputDecoration(
-            //         contentPadding: EdgeInsets.symmetric(vertical: 5),
-            //         prefixIcon: Text(
-            //           '₵',
-            //           style: TextStyle(
-            //               fontFamily: 'Manrope',
-            //               fontSize: 50.0,
-            //               fontWeight: FontWeight.w500,
-            //               color: Colors.white),
-            //         ),
-            //         prefixIconConstraints:
-            //             BoxConstraints(minWidth: 0, minHeight: 0),
-            //         hintText: '0.00',
-            //         hintStyle: TextStyle(
-            //             fontFamily: 'Manrope',
-            //             fontWeight: FontWeight.w500,
-            //             fontSize: 50,
-            //             color: Colors.white),
-            //         border: InputBorder.none),
-            //   ),
-            // ),
+           SizedBox(
+              height: getProportionateScreenHeight(50.0),
+            ),
             Text(
-              '₵ $text',
+              '₵ ${text == '' ? '0.00' : text}',
               style: TextStyle(
                   fontFamily: 'Manrope',
                   fontWeight: FontWeight.w500,
                   fontSize: getProportionateScreenWidth(50),
                   color: Colors.white),
-            ),
-            Text(
-              'Balance: ₵$accountBalance',
-              style: TextStyle(
-                  fontFamily: 'Manrope',
-                  fontSize: getProportionateScreenWidth(14.0),
-                  fontWeight: FontWeight.w500,
-                  color: Color(0xFFAFB0D1)),
             ),
             SizedBox(
               height: getProportionateScreenHeight(74.0),
