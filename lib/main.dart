@@ -63,14 +63,14 @@ class MyApp extends StatelessWidget {
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          scaffoldBackgroundColor: Color(0xFFE5E5E5),
+          scaffoldBackgroundColor: Color(0xFFF7FAFC),
           fontFamily: 'Manrope',
           iconTheme: IconThemeData(
             color: Color(0xFF243656),
           ),
           appBarTheme: AppBarTheme(
               brightness: Brightness.light,
-              backgroundColor: Color(0xFFE5E5E5),
+              backgroundColor: Color(0xFFF7FAFC),
               elevation: 0.0,
               titleTextStyle: TextStyle(
                   color: Color(0xFF243656),
