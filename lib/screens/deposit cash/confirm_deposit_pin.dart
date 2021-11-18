@@ -1,3 +1,4 @@
+import 'package:alewa_pay/components/helpDiag.dart';
 import 'package:alewa_pay/components/numpad.dart';
 import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
@@ -30,7 +31,9 @@ class _ConfirmDepositPinState extends State<ConfirmDepositPin> {
         elevation: 0.0,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              showAlertDialog(context);
+            },
             icon: Icon(
               Icons.help_outline,
               color: Color(0xFF555E6C),
