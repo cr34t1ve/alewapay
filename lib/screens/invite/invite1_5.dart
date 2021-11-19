@@ -206,10 +206,10 @@ class _Invite1p5State extends State<Invite1p5> {
                       : contacts[index];
                   return ContactTile(
                     title:
-                        '${contact.displayName ?? ''} ${contact.phones!.length != 0 ? contact.phones!.elementAt(0).label : ''}',
+                        '${contact.displayName ?? ''} (${contact.phones!.length != 0 ? contact.phones!.elementAt(0).label : ''})',
                     subtitle: contact.phones!.length != 0
                         ? contact.phones!.elementAt(0).value
-                        : '',
+                       : '',
                   );
                 },
               ))

@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
-class DefaultButton extends StatelessWidget {
-  const DefaultButton({
-    Key? key,
-    this.text,
-    this.press,
-  }) : super(key: key);
+class DefaultButton extends StatefulWidget {
+  DefaultButton({Key? key, this.text, this.press, this.isActive = false})
+      : super(key: key);
   final String? text;
   final Function? press;
+  bool isActive;
 
+  @override
+  _DefaultButtonState createState() => _DefaultButtonState();
+}
+
+class _DefaultButtonState extends State<DefaultButton> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -17,14 +20,14 @@ class DefaultButton extends StatelessWidget {
       child: FlatButton(
         padding: EdgeInsets.all(20.0),
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8),
-          ),
-        color: Color(0xFF434190),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        color: widget.isActive ? Color(0xFF434190) : Color(0xFFCCCED3),
         child: Text(
-          text!,
+          widget.text!,
           style: Theme.of(context).textTheme.headline4,
         ),
-        onPressed: press as void Function()?,
+        onPressed: widget.isActive ? widget.press as void Function()? : () {},
       ),
     );
   }
