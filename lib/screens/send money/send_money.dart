@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:alewa_pay/components/button.dart';
-import 'package:alewa_pay/components/contacttile.dart';
 import 'package:alewa_pay/enum/sizeConfig.dart';
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart' show IterableExtension;
