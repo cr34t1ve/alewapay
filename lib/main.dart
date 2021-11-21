@@ -22,6 +22,7 @@ import 'package:alewa_pay/screens/send%20money/send_money_pin.dart';
 import 'package:alewa_pay/screens/send%20money/send_money_success.dart';
 import 'package:alewa_pay/screens/setuppin/setuppin.dart';
 import 'package:alewa_pay/screens/splash/splash.dart';
+import 'package:alewa_pay/screens/transactions/transactions.dart';
 import 'package:alewa_pay/screens/wallet/wallet.dart';
 import 'package:alewa_pay/screens/welcome/welcome.dart';
 import 'package:alewa_pay/screens/withdraw%20cash/withdraw_cash_1.dart';
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/requestmoneysuccess',
+      initialRoute: '/transactions',
       routes: {
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),
@@ -83,6 +84,7 @@ class MyApp extends StatelessWidget {
         '/requestmoney': (context) => RequestMoney(),
         '/requestmoneypin': (context) => RequestMoneyPin(),
         '/requestmoneysuccess': (context) => RequestMoneySuccess(),
+        '/transactions': (context) => Transactions(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
