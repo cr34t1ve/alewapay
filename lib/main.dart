@@ -64,7 +64,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/mycode',
+      initialRoute: '/scanpage',
       routes: {
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),

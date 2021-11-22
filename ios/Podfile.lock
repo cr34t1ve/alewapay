@@ -2,13 +2,22 @@ PODS:
   - contacts_service (0.2.2):
     - Flutter
   - Flutter (1.0.0)
+  - MTBBarcodeScanner (5.0.11)
   - "permission_handler (5.1.0+2)":
     - Flutter
+  - qr_code_scanner (0.2.0):
+    - Flutter
+    - MTBBarcodeScanner
 
 DEPENDENCIES:
   - contacts_service (from `.symlinks/plugins/contacts_service/ios`)
   - Flutter (from `Flutter`)
   - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - qr_code_scanner (from `.symlinks/plugins/qr_code_scanner/ios`)
+
+SPEC REPOS:
+  trunk:
+    - MTBBarcodeScanner
 
 EXTERNAL SOURCES:
   contacts_service:
@@ -17,11 +26,15 @@ EXTERNAL SOURCES:
     :path: Flutter
   permission_handler:
     :path: ".symlinks/plugins/permission_handler/ios"
+  qr_code_scanner:
+    :path: ".symlinks/plugins/qr_code_scanner/ios"
 
 SPEC CHECKSUMS:
   contacts_service: 849e1f84281804c8bfbec1b4c3eedcb23c5d3eca
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
   permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  qr_code_scanner: bb67d64904c3b9658ada8c402e8b4d406d5d796e
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
