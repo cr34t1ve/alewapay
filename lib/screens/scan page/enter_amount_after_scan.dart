@@ -19,7 +19,7 @@ class _EnterAmountAfterScanState extends State<EnterAmountAfterScan> {
       print('$value tapped');
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,8 +37,8 @@ class _EnterAmountAfterScanState extends State<EnterAmountAfterScan> {
               fontWeight: FontWeight.w500),
         ),
         leading: IconButton(
-            onPressed: () {},
-            icon: Icon(
+          onPressed: () {},
+          icon: Icon(
             Icons.close_outlined,
             color: Colors.white,
           ),
@@ -90,22 +90,27 @@ class _EnterAmountAfterScanState extends State<EnterAmountAfterScan> {
                 color: Colors.red,
               ),
             ),
-            Container(
-                  width: double.infinity,
-              height: getProportionateScreenHeight(60),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF4C4A95),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: Center(
-                      child: Text(
-                    'Request Cash',
-                    style: TextStyle(
-                        fontSize: getProportionateScreenWidth(14.0),
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xFFF7FAFC)),
-                  )),
+            GestureDetector(
+              onTap: () {
+                // Navigator.pushNamed(context, routeName);
+              },
+              child: Container(
+                width: double.infinity,
+                height: getProportionateScreenHeight(60),
+                decoration: BoxDecoration(
+                  color: Color(0xFF4C4A95),
+                  borderRadius: BorderRadius.circular(8),
                 ),
+                child: Center(
+                    child: Text(
+                  'Request Cash',
+                  style: TextStyle(
+                      fontSize: getProportionateScreenWidth(14.0),
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFFF7FAFC)),
+                )),
+              ),
+            ),
             // Row(
             //   mainAxisAlignment: MainAxisAlignment.spaceAround,
             //   children: [

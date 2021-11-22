@@ -18,6 +18,7 @@ import 'package:alewa_pay/screens/request%20money/request_money.dart';
 import 'package:alewa_pay/screens/request%20money/request_money_pin.dart';
 import 'package:alewa_pay/screens/request%20money/request_money_success.dart';
 import 'package:alewa_pay/screens/scan%20page/enter_amount_after_scan.dart';
+import 'package:alewa_pay/screens/scan%20page/reason_for_request.dart';
 import 'package:alewa_pay/screens/scan%20page/scan_page.dart';
 import 'package:alewa_pay/screens/scan%20page/scanned_page_result.dart';
 import 'package:alewa_pay/screens/send%20money/send_money.dart';
@@ -56,7 +57,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/enteramountafterscan',
+      initialRoute: '/reasonforrequest',
       routes: {
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),
@@ -91,6 +92,7 @@ class MyApp extends StatelessWidget {
         '/scanpage': (context) => ScanPage(),
         '/scannedpageresult': (context) => ScannedPageResult(),
         '/enteramountafterscan': (context) => EnterAmountAfterScan(),
+        '/reasonforrequest': (context) => ReasonForRequest(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
