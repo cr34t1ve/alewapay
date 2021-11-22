@@ -17,6 +17,7 @@ import 'package:alewa_pay/screens/invite/invite1_5.dart';
 import 'package:alewa_pay/screens/request%20money/request_money.dart';
 import 'package:alewa_pay/screens/request%20money/request_money_pin.dart';
 import 'package:alewa_pay/screens/request%20money/request_money_success.dart';
+import 'package:alewa_pay/screens/scan%20page/enter_amount_after_scan.dart';
 import 'package:alewa_pay/screens/scan%20page/scan_page.dart';
 import 'package:alewa_pay/screens/scan%20page/scanned_page_result.dart';
 import 'package:alewa_pay/screens/send%20money/send_money.dart';
@@ -55,7 +56,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/scannedpageresult',
+      initialRoute: '/enteramountafterscan',
       routes: {
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),
@@ -88,7 +89,8 @@ class MyApp extends StatelessWidget {
         '/requestmoneysuccess': (context) => RequestMoneySuccess(),
         '/transactions': (context) => Transactions(),
         '/scanpage': (context) => ScanPage(),
-        '/scannedpageresult': (context) => ScannedPageResult()
+        '/scannedpageresult': (context) => ScannedPageResult(),
+        '/enteramountafterscan': (context) => EnterAmountAfterScan(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
