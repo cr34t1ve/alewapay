@@ -123,6 +123,10 @@ class MyApp extends StatelessWidget {
                   fontSize: 16.0,
                   fontWeight: FontWeight.w600,
                   color: Color(0xFFF7FAFC)),
+              headline5: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xFF555E6C)),
               bodyText1: TextStyle(
                   fontSize: 25.0,
                   fontWeight: FontWeight.w400,
