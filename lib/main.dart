@@ -17,15 +17,16 @@ import 'package:alewa_pay/screens/invite/invite1_5.dart';
 import 'package:alewa_pay/screens/request%20money/request_money.dart';
 import 'package:alewa_pay/screens/request%20money/request_money_pin.dart';
 import 'package:alewa_pay/screens/request%20money/request_money_success.dart';
-import 'package:alewa_pay/screens/scan%20page/enter_amount_after_scan.dart';
-import 'package:alewa_pay/screens/scan%20page/reason_for_request.dart';
-import 'package:alewa_pay/screens/scan%20page/scan_page.dart';
-import 'package:alewa_pay/screens/scan%20page/scan_request_pin.dart';
-import 'package:alewa_pay/screens/scan%20page/scanned_page_result.dart';
+import 'package:alewa_pay/screens/scan%20to%20request/enter_amount_after_scan.dart';
+import 'package:alewa_pay/screens/scan%20to%20request/reason_for_request.dart';
+import 'package:alewa_pay/screens/scan%20to%20request/scan_page.dart';
+import 'package:alewa_pay/screens/scan%20to%20request/scan_request_pin.dart';
 import 'package:alewa_pay/screens/scan%20to%20request/scan_request_success.dart';
+import 'package:alewa_pay/screens/scan%20to%20request/scanned_page_result.dart';
 import 'package:alewa_pay/screens/scan_to_send/enter_amount_send_scan.dart';
 import 'package:alewa_pay/screens/scan_to_send/reason_for_send.dart';
 import 'package:alewa_pay/screens/scan_to_send/scan_send_pin.dart';
+import 'package:alewa_pay/screens/scan_to_send/scan_send_success.dart';
 import 'package:alewa_pay/screens/send%20money/send_money.dart';
 import 'package:alewa_pay/screens/send%20money/send_money_pin.dart';
 import 'package:alewa_pay/screens/send%20money/send_money_success.dart';
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/scansendpin',
+      initialRoute: '/scansendsuccess',
       routes: {
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),
@@ -103,6 +104,7 @@ class MyApp extends StatelessWidget {
         '/enteramountsendscan': (context) => EnterAmountSendScan(),
         '/reasonforsend': (context) => ReasonForSend(),
         '/scansendpin': (context) => ScanSendPin(),
+        '/scansendsuccess': (context) => ScanSendSuccess()
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
