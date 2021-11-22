@@ -15,18 +15,11 @@ class _EnterAmountAfterScanState extends State<EnterAmountAfterScan> {
   String text = '';
   _onKeyboardTap(String value) {
     setState(() {
-      text = text + value;
+      text = text + value.trim();
       print('$value tapped');
     });
   }
-
-  // @override
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
-  //   text = '0.00';
-  // }
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,12 +38,11 @@ class _EnterAmountAfterScanState extends State<EnterAmountAfterScan> {
         ),
         leading: IconButton(
             onPressed: () {},
-            icon: SvgPicture.asset('assets/images/Vector.svg')),
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: SvgPicture.asset('assets/images/carbon_user-avatar.svg')),
-        ],
+            icon: Icon(
+            Icons.close_outlined,
+            color: Colors.white,
+          ),
+        ),
       ),
       body: Padding(
         padding:
@@ -61,12 +53,19 @@ class _EnterAmountAfterScanState extends State<EnterAmountAfterScan> {
               height: getProportionateScreenHeight(50.0),
             ),
             Text(
-              '₵ ${text == '' ? '0.00' : text}',
+              '₵ ${text == '' ? '0.00' : text.trim()}',
               style: TextStyle(
                   fontFamily: 'Manrope',
                   fontWeight: FontWeight.w500,
                   fontSize: getProportionateScreenWidth(50),
                   color: Colors.white),
+            ),
+            Text(
+              'Balance: ₵345.78',
+              style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: getProportionateScreenWidth(14.0),
+                  color: Color(0xFFAFB0D1)),
             ),
             SizedBox(
               height: getProportionateScreenHeight(74.0),
@@ -91,42 +90,58 @@ class _EnterAmountAfterScanState extends State<EnterAmountAfterScan> {
                 color: Colors.red,
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Container(
-                  width: getProportionateScreenWidth(149.0),
-                  height: getProportionateScreenHeight(48),
+            Container(
+                  width: double.infinity,
+              height: getProportionateScreenHeight(60),
                   decoration: BoxDecoration(
                     color: Color(0xFF4C4A95),
-                    borderRadius: BorderRadius.circular(6),
+                    borderRadius: BorderRadius.circular(8),
                   ),
                   child: Center(
                       child: Text(
                     'Request Cash',
                     style: TextStyle(
-                        fontFamily: 'Manrope',
                         fontSize: getProportionateScreenWidth(14.0),
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w600,
                         color: Color(0xFFF7FAFC)),
                   )),
                 ),
-                Container(
-                  width: getProportionateScreenWidth(149.0),
-                  height: getProportionateScreenHeight(48),
-                  decoration: BoxDecoration(color: Color(0xFF4C4A95)),
-                  child: Center(
-                      child: Text(
-                    'Send Cash',
-                    style: TextStyle(
-                        fontFamily: 'Manrope',
-                        fontSize: getProportionateScreenWidth(14.0),
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xFFF7FAFC)),
-                  )),
-                )
-              ],
-            )
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //   children: [
+            //     Container(
+            //       width: getProportionateScreenWidth(149.0),
+            //       height: getProportionateScreenHeight(48),
+            //       decoration: BoxDecoration(
+            //         color: Color(0xFF4C4A95),
+            //         borderRadius: BorderRadius.circular(6),
+            //       ),
+            //       child: Center(
+            //           child: Text(
+            //         'Request Cash',
+            //         style: TextStyle(
+            //             fontFamily: 'Manrope',
+            //             fontSize: getProportionateScreenWidth(14.0),
+            //             fontWeight: FontWeight.w500,
+            //             color: Color(0xFFF7FAFC)),
+            //       )),
+            //     ),
+            //     Container(
+            //       width: getProportionateScreenWidth(149.0),
+            //       height: getProportionateScreenHeight(48),
+            //       decoration: BoxDecoration(color: Color(0xFF4C4A95)),
+            //       child: Center(
+            //           child: Text(
+            //         'Send Cash',
+            //         style: TextStyle(
+            //             fontFamily: 'Manrope',
+            //             fontSize: getProportionateScreenWidth(14.0),
+            //             fontWeight: FontWeight.w500,
+            //             color: Color(0xFFF7FAFC)),
+            //       )),
+            //     )
+            //   ],
+            // )
           ],
         ),
       ),
