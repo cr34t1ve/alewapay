@@ -52,7 +52,10 @@ class _SendMoneySuccessState extends State<SendMoneySuccess> {
                 SafeArea(
                     child: DefaultButton(
                   text: 'Done',
-                  press: () {},
+                  press: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, '/home', (route) => false);
+                  },
                   isActive: true,
                 )),
                 SizedBox(

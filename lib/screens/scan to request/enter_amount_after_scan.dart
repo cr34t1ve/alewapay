@@ -92,7 +92,7 @@ class _EnterAmountAfterScanState extends State<EnterAmountAfterScan> {
             ),
             GestureDetector(
               onTap: () {
-                // Navigator.pushNamed(context, routeName);
+                Navigator.pushNamed(context, '/reasonforrequest');
               },
               child: Container(
                 width: double.infinity,

@@ -10,7 +10,7 @@ class RequestMoneySuccess extends StatefulWidget {
 }
 
 class _RequestMoneySuccessState extends State<RequestMoneySuccess> {
-   @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
@@ -52,7 +52,10 @@ class _RequestMoneySuccessState extends State<RequestMoneySuccess> {
                 SafeArea(
                     child: DefaultButton(
                   text: 'Done',
-                  press: () {},
+                  press: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, '/home', (route) => false);
+                  },
                   isActive: true,
                 )),
                 SizedBox(

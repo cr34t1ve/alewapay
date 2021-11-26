@@ -88,6 +88,7 @@ class _RequestMoneyPinState extends State<RequestMoneyPin> {
                     // errorAnimationController: errorController,
                     controller: _confirmPinController,
                     onCompleted: (v) {
+                      Navigator.pushNamed(context, '/requestmoneysuccess');
                       print("Completed");
                     },
                     onChanged: (value) {

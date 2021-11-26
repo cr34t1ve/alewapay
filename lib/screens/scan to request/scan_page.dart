@@ -123,25 +123,33 @@ class _ScanPageState extends State<ScanPage> {
               child: (result != null)
                   ? Text(
                       'Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}')
-                  : Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Row(
+                  : GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/mycode');
+                      },
+                      child: Container(
+                        child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            SvgPicture.asset('assets/images/Vectorqricon.svg')
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SvgPicture.asset(
+                                    'assets/images/Vectorqricon.svg')
+                              ],
+                            ),
+                            SizedBox(
+                              height: getProportionateScreenHeight(21.38),
+                            ),
+                            Text('MY CODE',
+                                style: TextStyle(
+                                    letterSpacing: 1.1,
+                                    color: Color(0xFF243656),
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 12)),
                           ],
                         ),
-                        SizedBox(
-                          height: getProportionateScreenHeight(21.38),
-                        ),
-                        Text('MY CODE',
-                            style: TextStyle(
-                                letterSpacing: 1.1,
-                                color: Color(0xFF243656),
-                                fontWeight: FontWeight.w700,
-                                fontSize: 12)),
-                      ],
+                      ),
                     ),
             ),
           )

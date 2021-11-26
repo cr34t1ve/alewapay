@@ -64,7 +64,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/scanpage',
+      initialRoute: '/introscreen1',
       routes: {
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),
@@ -98,7 +98,7 @@ class MyApp extends StatelessWidget {
         '/transactions': (context) => Transactions(),
         '/scanpage': (context) => ScanPage(),
         '/scannedpageresult': (context) => ScannedPageResult(),
-        '/enteramountafterscan': (context) => EnterAmountAfterScan(),
+        '/enteramountafterrequestscan': (context) => EnterAmountAfterScan(),
         '/reasonforrequest': (context) => ReasonForRequest(),
         '/scanrequestpin': (context) => ScanRequestPin(),
         '/scanrequestsuccess': (context) => ScanRequestSuccess(),

@@ -79,10 +79,16 @@ class _Invite1p5State extends State<Invite1p5> {
   Widget build(BuildContext context) {
     bool isSearching = searchController.text.isNotEmpty;
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0.0,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(
+            Icons.arrow_back_ios_new_outlined,
+            color: Colors.black,
+          ),
+        ),
         actions: [
           Padding(
             padding: EdgeInsets.only(right: 20.0),
@@ -209,7 +215,7 @@ class _Invite1p5State extends State<Invite1p5> {
                         '${contact.displayName ?? ''} (${contact.phones!.length != 0 ? contact.phones!.elementAt(0).label : ''})',
                     subtitle: contact.phones!.length != 0
                         ? contact.phones!.elementAt(0).value
-                       : '',
+                        : '',
                   );
                 },
               ))
@@ -224,7 +230,10 @@ class _Invite1p5State extends State<Invite1p5> {
                   SafeArea(
                     child: DefaultButton(
                       text: 'Continue',
-                      press: () {},
+                      press: () {
+                        Navigator.pushNamed(context, '/setuppin');
+                      },
+                      isActive: true,
                     ),
                   ),
                   SizedBox(

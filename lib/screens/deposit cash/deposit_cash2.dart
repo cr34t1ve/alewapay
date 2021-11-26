@@ -145,7 +145,9 @@ class _DepositCash2State extends State<DepositCash2> {
                 horizontal: getProportionateScreenWidth(21.0)),
             child: DefaultButton(
               text: 'Add  GHS 3,400.78',
-              press: () {},
+              press: () {
+                Navigator.pushNamed(context, '/confirmdepositpin');
+              },
             ),
           )
         ],

@@ -88,6 +88,7 @@ class _ScanRequestPinState extends State<ScanRequestPin> {
                     // errorAnimationController: errorController,
                     controller: _confirmPinController,
                     onCompleted: (v) {
+                      Navigator.pushNamed(context, '/scanrequestsuccess');
                       print("Completed");
                     },
                     onChanged: (value) {

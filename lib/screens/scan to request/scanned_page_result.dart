@@ -103,37 +103,47 @@ class _ScannedPageResultState extends State<ScannedPageResult> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                width: getProportionateScreenWidth(149.0),
-                height: getProportionateScreenHeight(48),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(6)),
-                    color: Color(0xFFAFB0D1).withOpacity(0.08)),
-                child: Center(
-                    child: Text(
-                  'Request Cash',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: getProportionateScreenWidth(14.0),
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF434190)),
-                )),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/enteramountafterrequestscan');
+                },
+                child: Container(
+                  width: getProportionateScreenWidth(149.0),
+                  height: getProportionateScreenHeight(48),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(6)),
+                      color: Color(0xFFAFB0D1).withOpacity(0.08)),
+                  child: Center(
+                      child: Text(
+                    'Request Cash',
+                    style: TextStyle(
+                        fontFamily: 'Manrope',
+                        fontSize: getProportionateScreenWidth(14.0),
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFF434190)),
+                  )),
+                ),
               ),
-              Container(
-                width: getProportionateScreenWidth(149.0),
-                height: getProportionateScreenHeight(48),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(6)),
-                    color: Color(0xFF434190)),
-                child: Center(
-                    child: Text(
-                  'Send Cash',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontSize: getProportionateScreenWidth(14.0),
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFFF7FAFC)),
-                )),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/enteramountsendscan');
+                },
+                child: Container(
+                  width: getProportionateScreenWidth(149.0),
+                  height: getProportionateScreenHeight(48),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(6)),
+                      color: Color(0xFF434190)),
+                  child: Center(
+                      child: Text(
+                    'Send Cash',
+                    style: TextStyle(
+                        fontFamily: 'Manrope',
+                        fontSize: getProportionateScreenWidth(14.0),
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFFF7FAFC)),
+                  )),
+                ),
               )
             ],
           )

@@ -88,6 +88,7 @@ class _ScanSendPinState extends State<ScanSendPin> {
                     // errorAnimationController: errorController,
                     controller: _confirmPinController,
                     onCompleted: (v) {
+                      Navigator.pushNamed(context, '/scansendsuccess');
                       print("Completed");
                     },
                     onChanged: (value) {

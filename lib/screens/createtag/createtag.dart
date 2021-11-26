@@ -14,6 +14,17 @@ class _CreateTagState extends State<CreateTag> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(
+            Icons.arrow_back_ios_new_outlined,
+            color: Colors.black,
+          ),
+        ),
+      ),
       body: GestureDetector(
         onTap: () {
           FocusScopeNode currentFocus = FocusScope.of(context);
@@ -27,12 +38,12 @@ class _CreateTagState extends State<CreateTag> {
           child: Column(
             children: [
               SizedBox(
-                height: getProportionateScreenHeight(104.0),
+                height: getProportionateScreenHeight(20.0),
               ),
               Row(
                 children: [
                   Text(
-                    'Link your Momo account',
+                    'Create your Alewatag',
                     style: Theme.of(context).textTheme.headline2,
                   ),
                 ],
@@ -88,7 +99,7 @@ class _CreateTagState extends State<CreateTag> {
                 height: getProportionateScreenHeight(25.0),
               ),
               Row(
-                children: [Text('alewa.app/\$$tag')],
+                children: [Text('alewa.app/\$${tag == '' ? 'yourtag' : tag}')],
               ),
               SizedBox(
                 height: getProportionateScreenHeight(40.0),
@@ -97,7 +108,10 @@ class _CreateTagState extends State<CreateTag> {
               SafeArea(
                 child: DefaultButton(
                   text: 'Finish',
-                  press: () {},
+                  press: () {
+                    Navigator.pushNamed(context, '/invite');
+                  },
+                  isActive: true,
                 ),
               ),
               SizedBox(

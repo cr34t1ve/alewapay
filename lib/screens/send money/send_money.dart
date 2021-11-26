@@ -244,7 +244,9 @@ class _SendMoneyState extends State<SendMoney> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   DefaultButton(
-                    press: () {},
+                    press: () {
+                      Navigator.pushNamed(context, '/sendmoneypin');
+                    },
                     text: 'Send Cash',
                     isActive: _isDone,
                   ),

@@ -77,7 +77,14 @@ class _IntroScreen1State extends State<IntroScreen1> {
               SafeArea(
                 child: DefaultButton(
                   text: 'Next',
-                  press: () {},
+                  press: () {
+                    // if user account exists {
+                    //  Navigator.pushReplacement();
+                    // }
+                    // else
+                    Navigator.pushNamed(context, '/introscreen2');
+                  },
+                  isActive: true,
                 ),
               ),
               SizedBox(

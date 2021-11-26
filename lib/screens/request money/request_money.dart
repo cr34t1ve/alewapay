@@ -244,7 +244,9 @@ class _RequestMoneyState extends State<RequestMoney> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   DefaultButton(
-                    press: () {},
+                    press: () {
+                      Navigator.pushNamed(context, '/requestmoneypin');
+                    },
                     text: 'Request Cash',
                     isActive: _isDone,
                   ),

@@ -58,7 +58,9 @@ class _HomeState extends State<Home> {
           ),
         ),
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/scanpage');
+            },
             icon: SvgPicture.asset('assets/images/Vector.svg')),
         actions: [
           IconButton(
@@ -71,7 +73,7 @@ class _HomeState extends State<Home> {
             EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
         child: Column(
           children: [
-           SizedBox(
+            SizedBox(
               height: getProportionateScreenHeight(50.0),
             ),
             Text(
@@ -108,36 +110,46 @@ class _HomeState extends State<Home> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  width: getProportionateScreenWidth(149.0),
-                  height: getProportionateScreenHeight(48),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF4C4A95),
-                    borderRadius: BorderRadius.circular(6),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/requestmoney');
+                  },
+                  child: Container(
+                    width: getProportionateScreenWidth(149.0),
+                    height: getProportionateScreenHeight(48),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF4C4A95),
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    child: Center(
+                        child: Text(
+                      'Request Cash',
+                      style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontSize: getProportionateScreenWidth(14.0),
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFFF7FAFC)),
+                    )),
                   ),
-                  child: Center(
-                      child: Text(
-                    'Request Cash',
-                    style: TextStyle(
-                        fontFamily: 'Manrope',
-                        fontSize: getProportionateScreenWidth(14.0),
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xFFF7FAFC)),
-                  )),
                 ),
-                Container(
-                  width: getProportionateScreenWidth(149.0),
-                  height: getProportionateScreenHeight(48),
-                  decoration: BoxDecoration(color: Color(0xFF4C4A95)),
-                  child: Center(
-                      child: Text(
-                    'Send Cash',
-                    style: TextStyle(
-                        fontFamily: 'Manrope',
-                        fontSize: getProportionateScreenWidth(14.0),
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xFFF7FAFC)),
-                  )),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/sendmoney');
+                  },
+                  child: Container(
+                    width: getProportionateScreenWidth(149.0),
+                    height: getProportionateScreenHeight(48),
+                    decoration: BoxDecoration(color: Color(0xFF4C4A95)),
+                    child: Center(
+                        child: Text(
+                      'Send Cash',
+                      style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontSize: getProportionateScreenWidth(14.0),
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFFF7FAFC)),
+                    )),
+                  ),
                 )
               ],
             )

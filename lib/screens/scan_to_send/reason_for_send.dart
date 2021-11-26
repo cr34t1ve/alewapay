@@ -10,7 +10,7 @@ class ReasonForSend extends StatefulWidget {
 }
 
 class _ReasonForSendState extends State<ReasonForSend> {
-   TextEditingController _reasonController = TextEditingController();
+  TextEditingController _reasonController = TextEditingController();
 
   @override
   void initState() {
@@ -85,7 +85,9 @@ class _ReasonForSendState extends State<ReasonForSend> {
               child: DefaultButton(
                 isActive: true,
                 text: 'Next',
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, '/scansendpin');
+                },
               ),
             ),
             SizedBox(

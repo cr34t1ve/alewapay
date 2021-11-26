@@ -12,9 +12,7 @@ class _InviteState extends State<Invite> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
         elevation: 0.0,
         actions: [
           Padding(
@@ -65,7 +63,10 @@ class _InviteState extends State<Invite> {
             SafeArea(
                   child: DefaultButton(
                     text: 'Continue',
-                    press: () {},
+                    press: () {
+                  Navigator.pushNamed(context, '/invite1.5');
+                },
+                isActive: true,
                   ),
             ),
             SizedBox(

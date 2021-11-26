@@ -145,7 +145,9 @@ class _WithdrawCash2State extends State<WithdrawCash2> {
                 horizontal: getProportionateScreenWidth(21.0)),
             child: DefaultButton(
               text: 'Withdraw',
-              press: () {},
+              press: () {
+                Navigator.pushNamed(context, '/confirmwithdrawpin');
+              },
             ),
           )
         ],

@@ -10,7 +10,7 @@ class ScanSendSuccess extends StatefulWidget {
 }
 
 class _ScanSendSuccessState extends State<ScanSendSuccess> {
-   @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
@@ -52,7 +52,10 @@ class _ScanSendSuccessState extends State<ScanSendSuccess> {
                 SafeArea(
                     child: DefaultButton(
                   text: 'Done',
-                  press: () {},
+                  press: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, '/home', (route) => false);
+                  },
                   isActive: true,
                 )),
                 SizedBox(

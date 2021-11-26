@@ -100,6 +100,7 @@ class _DepositCash1State extends State<DepositCash1> {
             text: 'Next',
             press: () {
               // navigator send amount and recipient details to page 2
+              Navigator.pushNamed(context, '/depositcash2');
             },
           )
         ],

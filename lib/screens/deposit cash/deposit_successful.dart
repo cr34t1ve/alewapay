@@ -49,7 +49,13 @@ class _DepositSuccessfulState extends State<DepositSuccessful> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                SafeArea(child: DefaultButton(text: 'Done', press: () {})),
+                SafeArea(
+                    child: DefaultButton(
+                        text: 'Done',
+                        press: () {
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, '/home', (route) => false);
+                        })),
                 SizedBox(
                   height: getProportionateScreenHeight(20.0),
                 )

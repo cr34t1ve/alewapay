@@ -1,3 +1,4 @@
+import 'package:alewa_pay/components/helpDiag.dart';
 import 'package:alewa_pay/components/numpad.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
@@ -23,13 +24,21 @@ class _SetupPinState extends State<SetupPin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0.0,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(
+            Icons.arrow_back_ios_new_outlined,
+            color: Colors.black,
+          ),
+        ),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              showAlertDialog(context);
+            },
             icon: Icon(
               Icons.help_outline,
               color: Color(0xFF555E6C),
@@ -84,6 +93,7 @@ class _SetupPinState extends State<SetupPin> {
                     controller: _setupPinController,
                     onCompleted: (v) {
                       print("Completed");
+                      Navigator.pushNamed(context, '/confirmpin');
                     },
                     onChanged: (value) {
                       print(value);

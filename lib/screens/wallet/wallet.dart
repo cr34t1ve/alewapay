@@ -84,39 +84,49 @@ class _WalletState extends State<Wallet> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  width: 149.0,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFEEF3F6),
-                    borderRadius: BorderRadius.circular(6),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/depositcash1');
+                  },
+                  child: Container(
+                    width: 149.0,
+                    height: 48,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFEEF3F6),
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    child: Center(
+                        child: Text(
+                      'Add Cash',
+                      style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF555E6C)),
+                    )),
                   ),
-                  child: Center(
-                      child: Text(
-                    'Add Cash',
-                    style: TextStyle(
-                        fontFamily: 'Manrope',
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xFF555E6C)),
-                  )),
                 ),
                 // SizedBox(
                 //   height: 30.0,
                 // ),
-                Container(
-                  width: 149.0,
-                  height: 48,
-                  decoration: BoxDecoration(color: Color(0xFFEEF3F6)),
-                  child: Center(
-                      child: Text(
-                    'Withdraw',
-                    style: TextStyle(
-                        fontFamily: 'Manrope',
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w500,
-                        color: Color(0xFF555E6C)),
-                  )),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/withdrawcash1');
+                  },
+                  child: Container(
+                    width: 149.0,
+                    height: 48,
+                    decoration: BoxDecoration(color: Color(0xFFEEF3F6)),
+                    child: Center(
+                        child: Text(
+                      'Withdraw',
+                      style: TextStyle(
+                          fontFamily: 'Manrope',
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF555E6C)),
+                    )),
+                  ),
                 )
               ],
             ),

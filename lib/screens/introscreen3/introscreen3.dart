@@ -13,12 +13,23 @@ class _IntroScreen3State extends State<IntroScreen3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(
+            Icons.arrow_back_ios_new_outlined,
+            color: Colors.black,
+          ),
+        ),
+      ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           children: [
             SizedBox(
-              height: getProportionateScreenHeight(104.0),
+              height: getProportionateScreenHeight(20.0),
             ),
             Row(
               children: [
@@ -52,7 +63,10 @@ class _IntroScreen3State extends State<IntroScreen3> {
             SafeArea(
               child: DefaultButton(
                 text: 'Next',
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, '/introscreen4');
+                },
+                isActive: true,
               ),
             ),
             SizedBox(

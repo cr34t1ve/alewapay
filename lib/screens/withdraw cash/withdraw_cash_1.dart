@@ -100,6 +100,7 @@ class _WithdrawCash1State extends State<WithdrawCash1> {
             text: 'Next',
             press: () {
               // navigator send amount and recipient details to page 2
+              Navigator.pushNamed(context, '/withdrawcash2');
             },
           )
         ],

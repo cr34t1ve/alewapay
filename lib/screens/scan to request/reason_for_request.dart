@@ -85,7 +85,9 @@ class _ReasonForRequestState extends State<ReasonForRequest> {
               child: DefaultButton(
                 isActive: true,
                 text: 'Next',
-                press: () {},
+                press: () {
+                  Navigator.pushNamed(context, '/scanrequestpin');
+                },
               ),
             ),
             SizedBox(

@@ -97,6 +97,7 @@ class _ConfirmDepositPinState extends State<ConfirmDepositPin> {
                     // errorAnimationController: errorController,
                     controller: _confirmPinController,
                     onCompleted: (v) {
+                      Navigator.pushNamed(context, '/depositsuccessful');
                       print("Completed");
                     },
                     onChanged: (value) {

@@ -90,7 +90,7 @@ class _EnterAmountSendScanState extends State<EnterAmountSendScan> {
             ),
             GestureDetector(
               onTap: () {
-                // Navigator.pushNamed(context, routeName);
+                Navigator.pushNamed(context, '/reasonforsend');
               },
               child: Container(
                 width: double.infinity,
