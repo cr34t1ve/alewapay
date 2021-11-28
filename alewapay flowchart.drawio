@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-23T15:55:44.242Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="yjoeNrToSPd-1H5V8RG-" version="15.8.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-26T18:50:45.593Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="1dswimUmcTCh0lGBVIfI" version="15.8.4" type="github">
   <diagram id="QqV_xGDiygs1yG8eiCDC" name="Page-1">
-    <mxGraphModel dx="2521" dy="1176" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="3318" dy="1546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -165,10 +165,10 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-21" value="welcome" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="-221" y="952" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-33" target="-ig2qusyZob2JXvE5IdV-40" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-33" target="-ig2qusyZob2JXvE5IdV-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-33" target="-ig2qusyZob2JXvE5IdV-41" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-33" target="-ig2qusyZob2JXvE5IdV-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-33" target="-ig2qusyZob2JXvE5IdV-36" edge="1">
@@ -180,10 +180,10 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-34" value="Transactions" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="474" y="1050" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-35" target="-ig2qusyZob2JXvE5IdV-82" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-83" value="triggered on &lt;br&gt;scan&lt;br&gt;result confirmation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-35" target="-ig2qusyZob2JXvE5IdV-82" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-35" target="-ig2qusyZob2JXvE5IdV-106" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-35" target="-ig2qusyZob2JXvE5IdV-106" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-35" value="Scan Page" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
@@ -192,43 +192,43 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-36" value="Profile" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="234" y="1050" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-40" target="-ig2qusyZob2JXvE5IdV-46" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-40" target="-ig2qusyZob2JXvE5IdV-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-40" value="Add Cash" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="-100" y="1210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-41" target="-ig2qusyZob2JXvE5IdV-63" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-41" target="-ig2qusyZob2JXvE5IdV-63" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-41" value="Withdraw" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="130" y="1210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-42" target="-ig2qusyZob2JXvE5IdV-70" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-42" target="-ig2qusyZob2JXvE5IdV-70" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-42" value="Send Cash" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="1120" y="1050" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-43" target="-ig2qusyZob2JXvE5IdV-76" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-43" target="-ig2qusyZob2JXvE5IdV-76" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-43" value="Request Cash" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="-250" y="1050" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-46" target="-ig2qusyZob2JXvE5IdV-54" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-46" target="-ig2qusyZob2JXvE5IdV-54" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-46" value="Deposit cash into wallet 01" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="-100" y="1350" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-54" target="-ig2qusyZob2JXvE5IdV-56" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-54" target="-ig2qusyZob2JXvE5IdV-56" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-54" value="Deposit cash into wallet 02" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="-100" y="1490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-56" target="-ig2qusyZob2JXvE5IdV-58" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-56" target="-ig2qusyZob2JXvE5IdV-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-56" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -240,16 +240,19 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-63" target="-ig2qusyZob2JXvE5IdV-65" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="-ig2qusyZob2JXvE5IdV-63" target="-ig2qusyZob2JXvE5IdV-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-63" value="withdraw cash into wallet 01" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="130" y="1350" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-65" target="-ig2qusyZob2JXvE5IdV-67" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-65" target="-ig2qusyZob2JXvE5IdV-67" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-65" value="withdraw cash into wallet 02" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="130" y="1490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-67" target="-ig2qusyZob2JXvE5IdV-68" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-67" target="-ig2qusyZob2JXvE5IdV-68" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-67" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -258,13 +261,13 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-68" value="withdraw successful" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="130" y="1770" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-70" target="-ig2qusyZob2JXvE5IdV-72" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-70" target="-ig2qusyZob2JXvE5IdV-72" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-70" value="send money" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-70" value="send money to:" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="1120" y="1190" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-72" target="-ig2qusyZob2JXvE5IdV-74" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-72" target="-ig2qusyZob2JXvE5IdV-74" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-72" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -273,13 +276,13 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-74" value="success page" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="1120" y="1470" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-76" target="-ig2qusyZob2JXvE5IdV-78" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-76" target="-ig2qusyZob2JXvE5IdV-78" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-76" value="request money" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-76" value="request money from:" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="-250" y="1190" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-78" target="-ig2qusyZob2JXvE5IdV-80" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-78" target="-ig2qusyZob2JXvE5IdV-80" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-78" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -294,7 +297,7 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-82" value="scanned code result" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="840" y="1180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-91" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-86" target="-ig2qusyZob2JXvE5IdV-95" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-91" value="request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-86" target="-ig2qusyZob2JXvE5IdV-95" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="830" y="1420" as="targetPoint" />
             <Array as="points">
@@ -302,7 +305,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-92" value="send" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-ig2qusyZob2JXvE5IdV-86" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-92" value="send" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-86" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="990" y="1420" as="targetPoint" />
             <Array as="points">
@@ -313,38 +316,53 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-86" value="request / send" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="860" y="1310" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-95" target="-ig2qusyZob2JXvE5IdV-98" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-95" target="-ig2qusyZob2JXvE5IdV-98" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="-ig2qusyZob2JXvE5IdV-95" target="xvoW4Bqq87kA6WfLcWgX-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-95" value="&lt;span&gt;enter request amount&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="770" y="1430" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-101" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-97" target="-ig2qusyZob2JXvE5IdV-100" edge="1">
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="-ig2qusyZob2JXvE5IdV-97" target="xvoW4Bqq87kA6WfLcWgX-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-97" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;verdana&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; text-decoration: none ; display: inline ; float: none&quot;&gt;enter send &amp;nbsp;amount&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="937" y="1430" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-98" target="-ig2qusyZob2JXvE5IdV-102" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-98" target="-ig2qusyZob2JXvE5IdV-102" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-98" value="confirm pin" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
-          <mxGeometry x="770" y="1570" width="120" height="60" as="geometry" />
+          <mxGeometry x="770" y="1700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-100" target="-ig2qusyZob2JXvE5IdV-104" edge="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-100" target="-ig2qusyZob2JXvE5IdV-104" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-100" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;verdana&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; text-decoration: none ; display: inline ; float: none&quot;&gt;confirm pin&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
-          <mxGeometry x="937" y="1570" width="120" height="60" as="geometry" />
+          <mxGeometry x="937" y="1700" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-102" value="Success page" style="whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
-          <mxGeometry x="770" y="1710" width="120" height="60" as="geometry" />
+          <mxGeometry x="770" y="1840" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-104" value="Success page" style="whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
-          <mxGeometry x="937" y="1710" width="120" height="60" as="geometry" />
+          <mxGeometry x="937" y="1840" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-106" value="My Code" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="640" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="xvoW4Bqq87kA6WfLcWgX-2" target="-ig2qusyZob2JXvE5IdV-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-2" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;verdana&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; text-decoration: none ; display: inline ; float: none&quot;&gt;reson for&amp;nbsp;&lt;br&gt;sending&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="937" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="xvoW4Bqq87kA6WfLcWgX-4" target="-ig2qusyZob2JXvE5IdV-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-4" value="reason for requesting" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1570" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
