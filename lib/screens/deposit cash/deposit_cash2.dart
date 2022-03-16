@@ -1,5 +1,6 @@
 import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/enum/sizeConfig.dart';
+import 'package:alewa_pay/screens/confirmpin/confirmpin.dart';
 import 'package:flutter/material.dart';
 
 class DepositCash2 extends StatefulWidget {
@@ -146,7 +147,12 @@ class _DepositCash2State extends State<DepositCash2> {
             child: DefaultButton(
               text: 'Add  GHS 3,400.78',
               press: () {
-                Navigator.pushNamed(context, '/confirmdepositpin');
+                // Navigator.pushNamed(context, '/confirmdepositpin');
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            ConfirmPin(nextScreen: 'welcome')));
               },
             ),
           )

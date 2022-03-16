@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/enum/sizeConfig.dart';
+import 'package:alewa_pay/screens/confirmpin/confirmpin.dart';
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:contacts_service/contacts_service.dart';
@@ -245,7 +246,12 @@ class _RequestMoneyState extends State<RequestMoney> {
                 children: [
                   DefaultButton(
                     press: () {
-                      Navigator.pushNamed(context, '/requestmoneypin');
+                      // Navigator.pushNamed(context, '/requestmoneypin');
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ConfirmPin(
+                                  nextScreen: 'requestmoneysuccess')));
                     },
                     text: 'Request Cash',
                     isActive: _isDone,

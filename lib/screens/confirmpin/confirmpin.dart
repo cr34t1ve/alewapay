@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class ConfirmPin extends StatefulWidget {
+  final String? nextScreen;
+  const ConfirmPin({Key? key, this.nextScreen}) : super(key: key);
   @override
   _ConfirmPinState createState() => _ConfirmPinState();
 }
@@ -105,7 +107,7 @@ class _ConfirmPinState extends State<ConfirmPin> {
                     controller: _confirmPinController,
                     onCompleted: (v) {
                       print("Completed");
-                      Navigator.pushNamed(context, '/welcome');
+                      Navigator.pushNamed(context, '/${widget.nextScreen}');
                     },
                     onChanged: (value) {
                       print(value);

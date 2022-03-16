@@ -1,5 +1,6 @@
 import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/enum/sizeConfig.dart';
+import 'package:alewa_pay/screens/confirmpin/confirmpin.dart';
 import 'package:flutter/material.dart';
 
 class ReasonForRequest extends StatefulWidget {
@@ -86,7 +87,12 @@ class _ReasonForRequestState extends State<ReasonForRequest> {
                 isActive: true,
                 text: 'Next',
                 press: () {
-                  Navigator.pushNamed(context, '/scanrequestpin');
+                  // Navigator.pushNamed(context, '/scanrequestpin');
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              ConfirmPin(nextScreen: 'scanrequestsuccess')));
                 },
               ),
             ),

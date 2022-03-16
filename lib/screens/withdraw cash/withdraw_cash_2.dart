@@ -1,5 +1,6 @@
 import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/enum/sizeConfig.dart';
+import 'package:alewa_pay/screens/confirmpin/confirmpin.dart';
 import 'package:flutter/material.dart';
 
 class WithdrawCash2 extends StatefulWidget {
@@ -146,7 +147,12 @@ class _WithdrawCash2State extends State<WithdrawCash2> {
             child: DefaultButton(
               text: 'Withdraw',
               press: () {
-                Navigator.pushNamed(context, '/confirmwithdrawpin');
+                // Navigator.pushNamed(context, '/confirmwithdrawpin');
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            ConfirmPin(nextScreen: 'withdrawsuccessful')));
               },
             ),
           )

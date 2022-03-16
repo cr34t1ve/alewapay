@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:alewa_pay/components/button.dart';
 import 'package:alewa_pay/enum/sizeConfig.dart';
+import 'package:alewa_pay/screens/confirmpin/confirmpin.dart';
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:contacts_service/contacts_service.dart';
@@ -245,7 +246,12 @@ class _SendMoneyState extends State<SendMoney> {
                 children: [
                   DefaultButton(
                     press: () {
-                      Navigator.pushNamed(context, '/sendmoneypin');
+                      // Navigator.pushNamed(context, '/sendmoneypin');
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  ConfirmPin(nextScreen: 'sendmoneysuccess')));
                     },
                     text: 'Send Cash',
                     isActive: _isDone,
