@@ -83,7 +83,9 @@ class _ScanPageState extends State<ScanPage> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               IconButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                  },
                                   icon: Icon(
                                     Icons.close_outlined,
                                     color: Colors.white,
