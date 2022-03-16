@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-26T18:50:45.593Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15" etag="1dswimUmcTCh0lGBVIfI" version="15.8.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-16T06:53:32.069Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15" etag="FN9-eMieZNVtRqDh0dVL" version="17.1.3" type="github">
   <diagram id="QqV_xGDiygs1yG8eiCDC" name="Page-1">
-    <mxGraphModel dx="3318" dy="1546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2902" dy="1353" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -151,7 +151,7 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-20" target="-ig2qusyZob2JXvE5IdV-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-20" value="confirm pin" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-20" value="confirm pin" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fillColor=#4D4D4D;strokeColor=#b46504;" parent="1" vertex="1">
           <mxGeometry x="-221" y="872" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-21" target="-ig2qusyZob2JXvE5IdV-5" edge="1">
@@ -231,7 +231,7 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-56" target="-ig2qusyZob2JXvE5IdV-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-56" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-56" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;fillColor=#4D4D4D;strokeColor=#b46504;" parent="1" vertex="1">
           <mxGeometry x="-100" y="1630" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-58" value="deposit successful" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -240,7 +240,7 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;" parent="1" source="-ig2qusyZob2JXvE5IdV-63" target="-ig2qusyZob2JXvE5IdV-65" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xvoW4Bqq87kA6WfLcWgX-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="-ig2qusyZob2JXvE5IdV-63" target="-ig2qusyZob2JXvE5IdV-65">
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-63" target="-ig2qusyZob2JXvE5IdV-65" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-63" value="withdraw cash into wallet 01" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -255,7 +255,7 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-67" target="-ig2qusyZob2JXvE5IdV-68" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-67" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-67" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;fillColor=#4D4D4D;strokeColor=#b46504;" parent="1" vertex="1">
           <mxGeometry x="130" y="1630" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-68" value="withdraw successful" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -270,7 +270,7 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-72" target="-ig2qusyZob2JXvE5IdV-74" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-72" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-72" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;fillColor=#4D4D4D;strokeColor=#b46504;" parent="1" vertex="1">
           <mxGeometry x="1120" y="1330" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-74" value="success page" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -285,7 +285,7 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-78" target="-ig2qusyZob2JXvE5IdV-80" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-78" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-78" value="confirm pin" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;fillColor=#4D4D4D;strokeColor=#b46504;" parent="1" vertex="1">
           <mxGeometry x="-250" y="1330" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-80" value="success page" style="whiteSpace=wrap;html=1;rounded=0;fontFamily=Verdana;" parent="1" vertex="1">
@@ -319,13 +319,13 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-95" target="-ig2qusyZob2JXvE5IdV-98" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xvoW4Bqq87kA6WfLcWgX-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="-ig2qusyZob2JXvE5IdV-95" target="xvoW4Bqq87kA6WfLcWgX-4">
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-95" target="xvoW4Bqq87kA6WfLcWgX-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-95" value="&lt;span&gt;enter request amount&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="770" y="1430" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xvoW4Bqq87kA6WfLcWgX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="-ig2qusyZob2JXvE5IdV-97" target="xvoW4Bqq87kA6WfLcWgX-2">
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-97" target="xvoW4Bqq87kA6WfLcWgX-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-97" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;verdana&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; text-decoration: none ; display: inline ; float: none&quot;&gt;enter send &amp;nbsp;amount&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
@@ -334,13 +334,13 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-103" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-98" target="-ig2qusyZob2JXvE5IdV-102" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-98" value="confirm pin" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-98" value="confirm pin" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;fillColor=#4D4D4D;strokeColor=#b46504;" parent="1" vertex="1">
           <mxGeometry x="770" y="1700" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="-ig2qusyZob2JXvE5IdV-100" target="-ig2qusyZob2JXvE5IdV-104" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-ig2qusyZob2JXvE5IdV-100" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;verdana&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; text-decoration: none ; display: inline ; float: none&quot;&gt;confirm pin&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
+        <mxCell id="-ig2qusyZob2JXvE5IdV-100" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;verdana&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; text-decoration: none ; display: inline ; float: none&quot;&gt;confirm pin&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;fillColor=#4D4D4D;strokeColor=#b46504;" parent="1" vertex="1">
           <mxGeometry x="937" y="1700" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-ig2qusyZob2JXvE5IdV-102" value="Success page" style="whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
@@ -352,16 +352,16 @@
         <mxCell id="-ig2qusyZob2JXvE5IdV-106" value="My Code" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="640" y="1180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xvoW4Bqq87kA6WfLcWgX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="xvoW4Bqq87kA6WfLcWgX-2" target="-ig2qusyZob2JXvE5IdV-100">
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="xvoW4Bqq87kA6WfLcWgX-2" target="-ig2qusyZob2JXvE5IdV-100" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xvoW4Bqq87kA6WfLcWgX-2" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;verdana&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; text-decoration: none ; display: inline ; float: none&quot;&gt;reson for&amp;nbsp;&lt;br&gt;sending&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" vertex="1" parent="1">
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-2" value="&lt;span style=&quot;color: rgb(240 , 240 , 240) ; font-family: &amp;#34;verdana&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(42 , 42 , 42) ; text-decoration: none ; display: inline ; float: none&quot;&gt;reson for&amp;nbsp;&lt;br&gt;sending&lt;br&gt;&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="937" y="1570" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xvoW4Bqq87kA6WfLcWgX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="xvoW4Bqq87kA6WfLcWgX-4" target="-ig2qusyZob2JXvE5IdV-98">
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" parent="1" source="xvoW4Bqq87kA6WfLcWgX-4" target="-ig2qusyZob2JXvE5IdV-98" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xvoW4Bqq87kA6WfLcWgX-4" value="reason for requesting" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" vertex="1" parent="1">
+        <mxCell id="xvoW4Bqq87kA6WfLcWgX-4" value="reason for requesting" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontFamily=Verdana;" parent="1" vertex="1">
           <mxGeometry x="770" y="1570" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
