@@ -54,7 +54,7 @@ class _WithdrawSuccessfulState extends State<WithdrawSuccessful> {
                         text: 'Done',
                         press: () {
                           Navigator.pushNamedAndRemoveUntil(
-                              context, '/home', (route) => false);
+                              context, '/navpage', (route) => false);
                         })),
                 SizedBox(
                   height: getProportionateScreenHeight(20.0),

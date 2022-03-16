@@ -54,7 +54,7 @@ class _ScanSendSuccessState extends State<ScanSendSuccess> {
                   text: 'Done',
                   press: () {
                     Navigator.pushNamedAndRemoveUntil(
-                        context, '/home', (route) => false);
+                        context, '/navpage', (route) => false);
                   },
                   isActive: true,
                 )),
