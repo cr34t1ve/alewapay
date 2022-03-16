@@ -15,6 +15,7 @@ import 'package:alewa_pay/screens/introscreen6/introscreen6.dart';
 import 'package:alewa_pay/screens/invite/invite.dart';
 import 'package:alewa_pay/screens/invite/invite1_5.dart';
 import 'package:alewa_pay/screens/my%20code/my_code.dart';
+import 'package:alewa_pay/screens/navpage/nav_page.dart';
 import 'package:alewa_pay/screens/request%20money/request_money.dart';
 import 'package:alewa_pay/screens/request%20money/request_money_pin.dart';
 import 'package:alewa_pay/screens/request%20money/request_money_success.dart';
@@ -64,8 +65,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return MaterialApp(
-      initialRoute: '/introscreen1',
+      initialRoute: '/navpage',
       routes: {
+        '/navpage': (context) => NavPage(),
         '/wallet': (context) => Wallet(),
         '/confirmpin': (context) => ConfirmPin(),
         '/home': (context) => Home(),
